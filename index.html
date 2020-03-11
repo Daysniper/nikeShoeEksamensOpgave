@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant:400,700|Montserrat:400,500&display=swap" rel="stylesheet">
     <title>Nike Shop</title>
 </head>
 <body>
     <nav>
         <h1 id="longName">Nike Pro Shop</h1>
+        <div id="links">
         <ul id="first">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
@@ -16,8 +18,9 @@
 
         <ul id="second">
             <li><a href="#">Store</a></li>
-            <li><a href="#" class="contact" onclick="display()">Contact</a></li>
+            <li><a href="#" class="contact">Contact</a></li>
         </ul>
+    </div>
     </nav>
 
     <main>
@@ -26,9 +29,14 @@
                 <img src="./img/Nike-orange.jpg" alt="">
             </div>
             <h3>Nike Air Max 720</h3>
-            <p>
-                Opfrisk din Swoosh-stil med disse herre Air Max 720 Trainers
-            </p>
+            <p>Opfrisk din Swoosh-stil med disse herre Air Max 720 Trainers.</p>
+            <div class="priceAndButton">
+                <div class="priceArea">
+                    <input id="price" type="number" value="1550" readonly="true">
+                    <p>kr</p>
+                </div>
+                <input class="addToBasket" type="button" value="+ Tilføj til kurv">
+            </div>
         </section>
 
         <section class="nikeBlue200">
@@ -36,7 +44,14 @@
                 <img src="./img/Nike-aqua.jpg" alt="">
             </div>
             <h3>Nike Air Max 200</h3>
-            <p></p>
+            <p>Bølgede linjer er inspireret af strømmen af lava og havets rytmiske bølger.</p>
+            <div class="priceAndButton">
+            <div class="priceArea">
+                <input id="price" type="number" value="998" readonly="true">
+                <p>kr</p>
+            </div>
+            <input class="addToBasket" type="button" value="+ Tilføj til kurv">
+            </div>
         </section>
 
         <section class="nike90">
@@ -44,12 +59,30 @@
                 <img src="./img/Nike-aquamarine.jpg" alt="">
             </div>
             <h3>Nike Air Max 90 HYP Womens</h3>
+            <p>
+                Opfrisk din Swoosh-stil med disse kvinde Air Max 90 Trainers - special color edition.
+            </p>
+            <div class="priceAndButton">
+            <div class="priceArea">
+                <input id="price" type="number" value="1550" readonly="true">
+                <p>kr</p>
+            </div>
+            <input class="addToBasket" type="button" value="+ Tilføj til kurv">
+            </div>
         </section>
 
         <section class="nikeColor200">
             <div class="img">
                 <img src="./img/Nike-bauhaus.jpg" alt="">
                 <h3>Nike Air Max 200</h3>
+            </div>
+            <p>Bølgede linjer er inspireret af strømmen af lava og havets rytmiske bølger.</p>
+            <div class="priceAndButton">
+            <div class="priceArea">
+                <input id="price" type="number" value="1200" readonly="true">
+                <p>kr</p>
+            </div>
+            <input class="addToBasket" type="button" value="+ Tilføj til kurv">
             </div>
         </section>
 
@@ -58,13 +91,29 @@
                 <img src="./img/Nike-blackwhite.jpg" alt="">
             </div>
             <h3>Nike Air Max 90 BW</h3>
+            <p>Vi har længe cidst at denne silhuet var på trapperne, og er glade for at den kom.</p>
+            <div class="priceAndButton">
+            <div class="priceArea">
+                <input id="price" type="number" value="1200" readonly="true">
+                <p>kr</p>
+            </div>
+            <input class="addToBasket" type="button" value="+ Tilføj til kurv">
+            </div>
         </section>
 
         <section class="nikeRetro">
             <div class="img">
                 <img src="./img/Nike-greenyellow.jpg" alt="">
             </div>
-            <h3>Nike Air Max Retro Future(GS)
+            <h3>Nike Air Max Retro Future(GS)</h3>
+            <p>High Voltage 720. Fremtid og fortid i perfekt match.</p>
+            <div class="priceAndButton">
+            <div class="priceArea">
+                <input id="price" type="number" value="1899" readonly="true">
+                <p>kr</p>
+            </div>
+            <input class="addToBasket" type="button" value="+ Tilføj til kurv">
+            </div>
         </section>
 
         <section class="nike270">
@@ -72,20 +121,44 @@
                 <img src="./img/Nike-pastel.jpg" alt="">
             </div>
             <h3>Nike Air Max 270 Phantom</h3>
+            <p>Nike Air Max 270 Phantom releaser den 3. juli, så sid klar ved tasterne, hvis du vil havde fat i et par.</p>
+            <div class="priceAndButton">
+            <div class="priceArea">
+                <input id="price" type="number" value="1100" readonly="true">
+                <p>kr</p>
+            </div>
+            <input class="addToBasket" type="button" value="+ Tilføj til kurv">
+            </div>
         </section>
 
         <section class="nikeKids">
             <div class="img">
-                <img src="./img/Nike-rainbow.jpg" alt="">
+                <img src="./img/Nike-whitered.jpg" alt="">
             </div>
             <h3>Nike Air Max Older Kids</h3>
+            <p>Opfrisk din Swoosh-stil med disse herre Air Max 270 Trainers.</p>
+            <div class="priceAndButton">
+            <div class="priceArea">
+                <input id="price" type="number" value="1200" readonly="true">
+                <p>kr</p>
+            </div>
+            <input class="addToBasket" type="button" value="+ Tilføj til kurv">
+            </div>
         </section>
 
         <section class="nikePink">
             <div class="img">
-                <img src="./img/Nike-whitered.jpg" alt="">
+                <img src="./img/Nike-rainbow.jpg" alt="">
             </div>
             <h3>Nike Air Max Metalic Pink</h3>
+            <p>Opfrisk din Swoosh-stil med disse herre Air Max 270 Trainers.</p>
+            <div class="priceAndButton">
+            <div class="priceArea">
+                <input id="price" type="number" value="1200" readonly="true">
+                <p>kr</p>
+            </div>
+            <input class="addToBasket" type="button" value="+ Tilføj til kurv">
+            </div>
         </section>
 
     </main>
@@ -95,4 +168,5 @@
     </section>
     
 </body>
+<script src="shop.js"></script>
 </html>
